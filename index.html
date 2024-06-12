@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Phishing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Anti-Phishing App</h1>
+        </header>
+        <main>
+            <section id="register">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <div class="input-group">
+                        <label for="phoneNumber">Mobile Number (Philippines only)</label>
+                        <input type="tel" id="phoneNumber" placeholder="+63XXXXXXXXXX" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </section>
+            <section id="scanMessages" style="display:none;">
+                <h2>Scan Messages</h2>
+                <button id="scanButton" class="btn">Scan Now</button>
+                <div id="results"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
